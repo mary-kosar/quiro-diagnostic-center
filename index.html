@@ -11,21 +11,24 @@
     <link rel="stylesheet" href="plugins/owl.theme.default.css">
     <link rel="stylesheet" href="bootstrap-grid.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
 <body>
-    <!-- нужно переделаит бургер на 3 полоски 
-    <button id="burger" onclick="navToggle()">Burger</button> -->
-
-    <div class="container">
+     <div class="container">
         <header class="header">
             <div class="row">
-                <div class="header__item col-4">
+                <div class="header__item col-xl-4 col-md-3">
                     <a href="#" class="logo" >
                         Quiro Diagnostic Center
                     </a>
-                </div>
-                <div class="header__item col-5">
-                    <nav id="nav">
+                </div>  
+                <div class="header__burger">
+                    <span id="icon-menu" onclick="navToggle()" class="material-icons _active">
+                        menu
+                    </span>                    
+                </div>               
+                <div class="header__item col-xl-5 col-md-1">
+                    <nav class="nav" id="nav">
                         <ul class="nav__ul">
                             <li class="nav__li"><a href="#" class="nav__a nav__a_active">Home</a></li>
                             <li class="nav__li"><a href="#" class="nav__a">Service</a></li>
@@ -33,14 +36,18 @@
                             <li class="nav__li"><a href="#" class="nav__a">Gallery</a></li>
                             <li class="nav__li"><a href="#" class="nav__a">Contact</a></li>
                         </ul>
-                    </nav>
+                        <span id="icon-close" onclick="navToggle()" class="material-icons">
+                            close
+                        </span>
+                    </nav>                    
                 </div>
-                <div class="header__item col-3">
+                <div class="header__item col-xl-3 col-md-5">
                     <div class="search">
                         <input class="search__input" placeholder="Search Here" type="search">
                         <img class="search__icon" src="./image/icons/search.svg" alt="Search icon">
                     </div>
                 </div>
+                
             </div> 
         </header>
         <div class="slider">
@@ -54,7 +61,6 @@
                 <div class="item">
                     <img src="image/photos/Rectangle1.png" alt="image">
                 </div>
-
             </div>
         </div>  
         <!-- about services title -->
@@ -68,25 +74,25 @@
         </div>
         <!-- services -->
         <div class="services row">
-            <div class="col-12 col-md-4">
+            <div class="services card-cover col-md-4">
                 <div class="card">
-                    <img src="image/icons/ring_volume.svg" alt="phone">
+                    <img class="card__icon" src="image/icons/ring_volume.svg" alt="phone">
                     <p class="card__title">Call For Appointments</p>
                     <p class="card__desc">Velit faucibus sed adipiscing commodo. Mattis in at amet, facilisis eu dolor. Quam sit risus egestas morbi.</p>
                     <p class="card__text-link"><a href="#" class="card__link">Learn More <img class="card_img" src="image/icons/arrow.svg" alt="arrow"></a></p>
                 </div>
             </div>
-            <div class="col-12 col-md-4">
+            <div class="services card-cover col-md-4">
                 <div class="card">
-                    <img src="image/icons/person_search.svg" alt="phone">
+                    <img class="card__icon" src="image/icons/person_search.svg" alt="phone">
                     <p class="card__title">Find A Doctor</p>
                     <p class="card__desc">Velit faucibus sed adipiscing commodo. Mattis in at amet, facilisis eu dolor. Quam sit risus egestas morbi.</p>
                     <p class="card__text-link"><a href="#" class="card__link">Learn More <img class="card_img" src="image/icons/arrow.svg" alt="arrow"></a></p>    
                 </div>
             </div>
-            <div class="col-12 col-md-4">
+            <div class="services card-cover col-md-4">
                 <div class="card">
-                    <img src="image/icons/medical_information.svg" alt="phone">
+                    <img class="card__icon" src="image/icons/medical_information.svg" alt="phone">
                     <p class="card__title">Our Services</p>
                     <p class="card__desc">Velit faucibus sed adipiscing commodo. Mattis in at amet, facilisis eu dolor. Quam sit risus egestas morbi.</p>
                     <p class="card__text-link"><a href="#" class="card__link">Learn More <img class="card_img" src="image/icons/arrow.svg" alt="arrow"></a></p>    
@@ -105,7 +111,7 @@
         <!-- review -->
         <div class="review">
             <div class="row">
-                <div class="col-12 col-md-4">
+                <div class="col-md-4 card-cover">
                     <div class="card">
                         <div class="card__person person">
                             <div class="person__img">
@@ -122,7 +128,7 @@
                         </button>
                     </div>
                 </div>
-                <div class="col-12 col-md-4">
+                <div class="col-md-4 card-cover">
                     <div class="card">
                         <div class="card__person person">
                             <div class="person__img">
@@ -139,7 +145,7 @@
                         </button>
                     </div>
                 </div>
-                <div class="col-12 col-md-4">
+                <div class="col-md-4 card-cover">
                     <div class="card">
                         <div class="card__person person">
                             <div class="person__img">
@@ -156,7 +162,7 @@
                         </button>
                     </div>
                 </div>
-                <div class="col-12 col-md-4">
+                <div class="col-md-4 card-cover">
                     <div class="card">
                         <div class="card__person person">
                             <div class="person__img">
@@ -173,7 +179,7 @@
                         </button>
                     </div>
                 </div>
-                <div class="col-12 col-md-4">
+                <div class="col-md-4 card-cover">
                     <div class="card">
                         <div class="card__person person">
                             <div class="person__img">
@@ -190,7 +196,7 @@
                         </button>
                     </div>
                 </div>
-                <div class="col-12 col-md-4">
+                <div class="col-md-4 card-cover">
                     <div class="card">
                         <div class="card__person person">
                             <div class="person__img">
@@ -217,7 +223,7 @@
             <div class="col-12">
                 <div class="search-block__title">Join Our Newsletter</div>
                 <div class="search-block__subscribe">
-                    <input class="search-block__input col-12 col-md-8" placeholder="Enter your email" type="search">
+                    <input class="search-block__input" placeholder="Enter your email" type="search">
                     <button class="search-block__btn btn">
                         <a href="#" class="btn__link">Subscribe</a>
                     </button>
@@ -227,32 +233,35 @@
         <!-- footer -->
         <footer class="footer">
             <div class="row">
-                <div class="footer__info col-5">
-                    <p class="footer__title">Quiro Diagnostic Center</p>
+                <div class="footer__info col-md-5">
+                    <h2 class="footer__title">Quiro Diagnostic Center</h2>
                     <p class="footer__info">Magnis facilisis tortor volutpat lobortis ac id. Libero enim nunc etiam consectetur lacus. In malesuada dictum turpis amet porttitor viverra laoreet at commodo. Pellentesque vitae id semper nec sollicitudin. Quis purus, mus consectetur pharetra ipsum facilisis amet cras purus.</p>    
                 </div>
-                <div class="contacts col-3">
+                <div class="contacts col-md-4">
                     <div class="adress">
-                        <p class="footer__title">Address</p>
+                        <h3 class="footer__title">Address</h3>
                         <p class="footer__info">5 Koh Sek Lim Rd Singapore 486050</p>
                     </div>
                     <div class="tel">
-                        <p class="footer__title">Telephone</p>
+                        <h3 class="footer__title">Telephone</h3>
                         <p class="footer__info">(07)40127246 (02)67566577</p>
                     </div>
                     <div class="mail">
-                        <p class="footer__title">Email</p>
+                        <h3 class="footer__title">Email</h3>
                         <p class="footer__info">name@email.com</p>
                     </div>
                 </div>
-                <div class="hours col-4">
+                <div class="hours col-md-3">
                     <p class="footer__title">Opening Hour</p>
-                    <p class="footer__info">Thursday: 9am - 6pm</p>
-                    <p class="footer__info">Wednesday: 9am - 6pm</p>
-                    <p class="footer__info">Saturday: 9am - 6pm</p>
-                    <p class="footer__info">Friday: 9am - 6pm</p>
-                    <p class="footer__info">Saturday: 9am - 6pm</p>
-                    <p class="footer__info">Tuesday: 9am - 6pm</p>
+                    <ul>
+                        <li class="footer__info">Thursday: 9am - 6pm</li>
+                        <li class="footer__info">Wednesday: 9am - 6pm</li>
+                        <li class="footer__info">Saturday: 9am - 6pm</li>
+                        <li class="footer__info">Friday: 9am - 6pm</li>
+                        <li class="footer__info">Saturday: 9am - 6pm</li>
+                        <li class="footer__info">Tuesday: 9am - 6pm</li>
+                    </ul>
+                    
                 </div>
             </div>
             
