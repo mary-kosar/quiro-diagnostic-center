@@ -9,6 +9,14 @@
     li {
         padding-top: 1.5rem;
     }
+    .footer__info {
+        a {
+            color: $color-dark;
+        }
+        span {
+            padding-left: 20px;
+        }
+    }
 }
 
 .tel {
@@ -22,7 +30,6 @@
         margin-top: 3.3rem;
         margin-bottom: 3.3rem;
     }
-
 }
 
 
