@@ -130,32 +130,7 @@
         @include text($font-base, 400, 1.6rem, 1.9rem, $color-dark);
     }
 }
-
-
-.card {
-    background-color: $color-secondary;
-    border-radius: 1.5rem;
-    padding: 4.6rem 2.6rem;   
-    &__title {
-        @include text($font-base, 600, 2.4rem, 2.8rem, $color-dark);
-        padding-top: 2.7rem;
-    }
-    &__desc {
-        @include text($font-base, 400, 1.6rem, 1.9rem, $color-grey);
-        padding: 1.7rem 0;
-    }
-    &__text-link {
-        @include text($font-base, 600, 1.6rem, 1.9rem, $color-primary);
-       
-    }
-    &__link {
-        text-decoration: underline;
-        color: $color-primary;
-    }
-    &__image-link {
-        padding-left: 0.2rem;
-    }
-}
+// services
 .services {
     text-align: center;
     & .card-cover {
@@ -169,8 +144,7 @@
         .card__link {
             color: $color-white;
         }
-    } 
-  
+    }   
 }
 .card {
 	&__person {
@@ -200,7 +174,46 @@
     &__link {
         @include text($font-base, 600, 2.0rem, 2.3rem, $color-secondary);
     }
-    
+
+}
+// review
+.card {
+    background-color: $color-secondary;
+    border-radius: 1.5rem;
+    padding: 4.6rem 2.6rem;   
+    &__title {
+        @include text($font-base, 600, 2.4rem, 2.8rem, $color-dark);
+        padding-top: 2.7rem;
+    }
+    &__desc {
+        @include text($font-base, 400, 1.6rem, 1.9rem, $color-grey);
+        padding: 1.7rem 0;
+    }
+    &__text-link {
+        @include text($font-base, 600, 1.6rem, 1.9rem, $color-primary);
+       
+    }
+    &__link {
+        text-decoration: underline;
+        color: $color-primary;
+    }
+    &__image-link {
+        padding-left: 0.2rem;
+    }
+    .show-mob {
+        display: none;
+    }
+    @media (max-width:980px) {
+        .hide-mob {
+            display: none;
+        }
+        .show-mob {
+            display: flex;
+            .btn {
+                margin-bottom: 1rem;
+            }
+        }
+    }
 }
 // search-block
 .search-block {

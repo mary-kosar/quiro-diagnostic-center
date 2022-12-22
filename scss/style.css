@@ -152,47 +152,6 @@ html {
     line-height: 1.9rem;
     color: #262626; }
 
-.card {
-  background-color: #F9F1FE;
-  border-radius: 1.5rem;
-  padding: 4.6rem 2.6rem; }
-  .card__title {
-    font-family: "Work Sans", sans-serif;
-    font-weight: 600;
-    font-size: 2.4rem;
-    line-height: 2.8rem;
-    color: #262626;
-    padding-top: 2.7rem; }
-  .card__desc {
-    font-family: "Work Sans", sans-serif;
-    font-weight: 400;
-    font-size: 1.6rem;
-    line-height: 1.9rem;
-    color: #575757;
-    padding: 1.7rem 0; }
-  .card__text-link {
-    font-family: "Work Sans", sans-serif;
-    font-weight: 600;
-    font-size: 1.6rem;
-    line-height: 1.9rem;
-    color: #8842F0; }
-  .card__link {
-    text-decoration: underline;
-    color: #8842F0; }
-  .card__image-link {
-    padding-left: 0.2rem; }
-
-.show-mob {
-  display: none; }
-
-@media (max-width: 980px) {
-  .hide-mob {
-    display: none; }
-
-  .show-mob {
-    display: flex; }
-    .show-mob .btn {
-      margin-bottom: 1rem; } }
 .services {
   text-align: center; }
   .services .card-cover {
@@ -238,6 +197,45 @@ html {
     font-size: 2rem;
     line-height: 2.3rem;
     color: #F9F1FE; }
+
+.card {
+  background-color: #F9F1FE;
+  border-radius: 1.5rem;
+  padding: 4.6rem 2.6rem; }
+  .card__title {
+    font-family: "Work Sans", sans-serif;
+    font-weight: 600;
+    font-size: 2.4rem;
+    line-height: 2.8rem;
+    color: #262626;
+    padding-top: 2.7rem; }
+  .card__desc {
+    font-family: "Work Sans", sans-serif;
+    font-weight: 400;
+    font-size: 1.6rem;
+    line-height: 1.9rem;
+    color: #575757;
+    padding: 1.7rem 0; }
+  .card__text-link {
+    font-family: "Work Sans", sans-serif;
+    font-weight: 600;
+    font-size: 1.6rem;
+    line-height: 1.9rem;
+    color: #8842F0; }
+  .card__link {
+    text-decoration: underline;
+    color: #8842F0; }
+  .card__image-link {
+    padding-left: 0.2rem; }
+  .card .show-mob {
+    display: none; }
+  @media (max-width: 980px) {
+    .card .hide-mob {
+      display: none; }
+    .card .show-mob {
+      display: flex; }
+      .card .show-mob .btn {
+        margin-bottom: 1rem; } }
 
 .search-block {
   margin: 13.0rem 0;
